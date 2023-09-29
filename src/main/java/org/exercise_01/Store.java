@@ -1,5 +1,6 @@
 package org.exercise_01;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,5 +23,13 @@ public class Store {
     public void setOder(List<Order> oder) {
         this.orders = oder;
     }
+  
 
+    public void addProduct(Product product){
+        this.products.add(product);
+    }
+
+    public void processOrder(Order order){
+        this.orders.add(order);
+    }
 }
