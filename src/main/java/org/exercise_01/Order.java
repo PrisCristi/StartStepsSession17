@@ -24,6 +24,10 @@ public class Order {
         this.totalPrice = 0;
     }
 
+    public long getOrderId() {
+        return orderId;
+    }
+
     public void generateInvoice(){
         System.out.println("Order id: " + orderId);
         System.out.println("Order products: ");

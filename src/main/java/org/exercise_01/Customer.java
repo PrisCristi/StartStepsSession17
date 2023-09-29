@@ -20,6 +20,7 @@ public class Customer {
 
     public void addToCart(Product item){
         cart.add(item);
+        System.out.println(item.getName() + " added to your cart");
     }
 
     public Order checkout(){

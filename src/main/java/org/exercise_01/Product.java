@@ -5,6 +5,11 @@ public class Product {
     private double price;
     private float stock;
 
+    public Product(String s, double v) {
+        this.name = s;
+        this.price = v;
+    }
+
     public void getDetails() {
         System.out.println("Name = " + name);
         System.out.println("Price = " + price);

@@ -27,9 +27,14 @@ public class Store {
 
     public void addProduct(Product product){
         this.products.add(product);
+        System.out.println(product.getName() + " added to store");
     }
 
     public void processOrder(Order order){
         this.orders.add(order);
+        System.out.println(order.getOrderId() + " order was processed");
     }
+
+
+
 }
