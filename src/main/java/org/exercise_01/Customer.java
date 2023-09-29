@@ -1,6 +1,9 @@
 package org.exercise_01;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Customer {
@@ -19,14 +22,14 @@ public class Customer {
         cart.add(item);
     }
 
-    public void checkout(){
-        double orderTotalPrice = 0;
+    public Order checkout(){
+        Order newOrder;
         if(!cart.isEmpty()) {
-            for (Product product : cart) {
-                orderTotalPrice += product.getPrice();
-            }
-            System.out.println("Your order total price is " + orderTotalPrice);
+            newOrder = new Order(System.currentTimeMillis(), cart);
             cart.clear();
+        }else {
+            newOrder = new Order(System.currentTimeMillis());
         }
+        return newOrder;
     }
 }
