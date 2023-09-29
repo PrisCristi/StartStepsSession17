@@ -2,7 +2,7 @@ package org.exercise_01;
 
 public class Product {
     private String name;
-    private int price;
+    private double price;
     private float stock;
 
     public void getDetails() {
@@ -24,11 +24,11 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -43,7 +43,7 @@ public class Product {
     public Product(){
 
     }
-    public Product(String name, int price, float stock) {
+    public Product(String name, double price, float stock) {
         this.name = name;
         this.price = price;
         this.stock = stock;
