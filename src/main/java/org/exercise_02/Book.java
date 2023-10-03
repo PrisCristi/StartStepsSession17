@@ -5,23 +5,26 @@ public class Book {
     private String title;
     private String author;
     private Long ISBN;
+    private boolean available;
 
     // 2. Create method book
     public Book (String t, String a, Long i){
-        // 3. estabelecer parametros para os atributos. Usar "this".
         this.title = t;
         this.author = a;
         this.ISBN = i;
+        this.available = true;
     }
 
-    // 3. criar getter metodo para imprimir os info (sobre o produto)
+    public String getBookInfo(){
+        return "Title: " + title + " Author: " + author + "ISBN: " + ISBN;
+    }
 
-public void getBookInfo(){
-    System.out.println("Title: " + title);
-    System.out.println("Author: " + author);
-    System.out.println("ISBN: " + ISBN);
-}
+// 4. isAvailable method
 
-    // 4. create metodo para saber se o livro está disponível.
-
+    public boolean isAvailable() {
+        return available;
+    }
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
 }
