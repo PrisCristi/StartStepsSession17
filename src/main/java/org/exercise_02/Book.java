@@ -4,11 +4,11 @@ public class Book {
     //1. create Attributes
     private String title;
     private String author;
-    private Long ISBN;
+    private String ISBN;
     private boolean available;
 
     // 2. Create method book
-    public Book (String t, String a, Long i){
+    public Book (String t, String a, String i){
         this.title = t;
         this.author = a;
         this.ISBN = i;
@@ -22,9 +22,11 @@ public class Book {
 // 4. isAvailable method
 
     public boolean isAvailable() {
+
         return available;
     }
     public void setAvailable(boolean available) {
+
         this.available = available;
     }
 }

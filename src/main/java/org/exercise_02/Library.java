@@ -27,8 +27,11 @@ public class Library {
         if (book.contains(book) && member.contains(member)) {
             Loan loan = new Loan(book, member, dueDate);
             loans.add(loan);
-            System.out.println("Loan issued for " + book.getBookInfo() + " to " + member);
+
+            System.out.println("Loan issued for " + book.getBookInfo + " to " + member);
+
         } else {
+
             System.out.println("Invalid book or member");
         }
     }
