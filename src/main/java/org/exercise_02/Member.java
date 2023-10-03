@@ -37,6 +37,8 @@ public class Member {
 
     }
 
+    public void add(Member member) {
+    }
 }
 
 
